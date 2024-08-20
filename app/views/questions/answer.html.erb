@@ -1,3 +1,13 @@
 
-<%= @question %>
-<%= @answer %>
+<h1>Stupid Coaching</h1>
+<div class="form-floating mb-3">
+  <input type="email" class="form-control" id="yourQuestion">
+  <label for="floatingInput"><%= @question %>
+  -You</label>
+</div>
+<div class="form-floating">
+  <input type="password" class="form-control" id="coachAnswer" >
+  <label for="floatingPassword"><%= @answer %>
+  -Your Coach</label>
+</div>
+<%= link_to "Ask a New Question", ask_path %>
